@@ -19,7 +19,7 @@ namespace Calculator_CAPISTRANO
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            TEXTBOX1.AppendText("0");
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -35,6 +35,21 @@ namespace Calculator_CAPISTRANO
         private void PLUS_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void TEXTBOX1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TWO_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AC_Click(object sender, EventArgs e)
+        {
+            TEXTBOX1.Clear();
         }
     }
 }

@@ -69,6 +69,7 @@ namespace Calculator_CAPISTRANO
             this.TWO.TabIndex = 1;
             this.TWO.Text = "2";
             this.TWO.UseVisualStyleBackColor = true;
+            this.TWO.Click += new System.EventHandler(this.TWO_Click);
             // 
             // FIVE
             // 
@@ -96,6 +97,7 @@ namespace Calculator_CAPISTRANO
             this.AC.TabIndex = 4;
             this.AC.Text = "AC";
             this.AC.UseVisualStyleBackColor = true;
+            this.AC.Click += new System.EventHandler(this.AC_Click);
             // 
             // EQUALS
             // 
@@ -232,6 +234,7 @@ namespace Calculator_CAPISTRANO
             this.TEXTBOX1.Size = new System.Drawing.Size(331, 66);
             this.TEXTBOX1.TabIndex = 22;
             this.TEXTBOX1.Text = "";
+            this.TEXTBOX1.TextChanged += new System.EventHandler(this.TEXTBOX1_TextChanged);
             // 
             // CALCULATOR
             // 
