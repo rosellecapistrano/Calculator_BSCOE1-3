@@ -1,0 +1,18 @@
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\TIC TAC TOE.csprojAssemblyReference.cache
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\TIC TAC TOE.csproj.GenerateResource.cache
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\TIC TAC TOE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\TIC TAC TOE.AssemblyInfoInputs.cache
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\TIC TAC TOE.AssemblyInfo.cs
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\TIC TAC TOE.csproj.CoreCompileInputs.cache
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\TIC TAC TOE.exe
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\TIC TAC TOE.deps.json
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\TIC TAC TOE.runtimeconfig.json
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\TIC TAC TOE.runtimeconfig.dev.json
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\TIC TAC TOE.dll
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\ref\TIC TAC TOE.dll
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\bin\Debug\net5.0-windows\TIC TAC TOE.pdb
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\TIC TAC TOE.dll
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\ref\TIC TAC TOE.dll
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\TIC TAC TOE.pdb
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\TIC TAC TOE.genruntimeconfig.cache
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\WinFormsApp1\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.TICTACTOE.resources
