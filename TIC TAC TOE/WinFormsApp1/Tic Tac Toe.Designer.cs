@@ -39,11 +39,10 @@ namespace WinFormsApp1
             this.box7 = new System.Windows.Forms.Button();
             this.box8 = new System.Windows.Forms.Button();
             this.box9 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.NewGame = new System.Windows.Forms.Button();
             this.Exit = new System.Windows.Forms.Button();
             this.About = new System.Windows.Forms.Button();
+            this.playerturn = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // box1
@@ -136,26 +135,6 @@ namespace WinFormsApp1
             this.box9.UseVisualStyleBackColor = true;
             this.box9.Click += new System.EventHandler(this.box_Click);
             // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(27, 327);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 36);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "TURN";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label2.Location = new System.Drawing.Point(130, 327);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 36);
-            this.label2.TabIndex = 10;
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // NewGame
             // 
             this.NewGame.Font = new System.Drawing.Font("Rockwell", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -165,6 +144,7 @@ namespace WinFormsApp1
             this.NewGame.TabIndex = 11;
             this.NewGame.Text = "New Game";
             this.NewGame.UseVisualStyleBackColor = true;
+            this.NewGame.Click += new System.EventHandler(this.NewGame_Click);
             // 
             // Exit
             // 
@@ -188,16 +168,25 @@ namespace WinFormsApp1
             this.About.UseVisualStyleBackColor = true;
             this.About.Click += new System.EventHandler(this.About_Click);
             // 
+            // playerturn
+            // 
+            this.playerturn.Font = new System.Drawing.Font("SF Distant Galaxy Alternate", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.playerturn.Location = new System.Drawing.Point(66, 327);
+            this.playerturn.Name = "playerturn";
+            this.playerturn.Size = new System.Drawing.Size(173, 37);
+            this.playerturn.TabIndex = 14;
+            this.playerturn.Text = " ";
+            this.playerturn.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            // 
             // TICTACTOE
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(298, 372);
+            this.ClientSize = new System.Drawing.Size(294, 390);
+            this.Controls.Add(this.playerturn);
             this.Controls.Add(this.About);
             this.Controls.Add(this.Exit);
             this.Controls.Add(this.NewGame);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.box9);
             this.Controls.Add(this.box8);
             this.Controls.Add(this.box7);
@@ -208,7 +197,9 @@ namespace WinFormsApp1
             this.Controls.Add(this.box2);
             this.Controls.Add(this.box1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "TICTACTOE";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic Tac Toe ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -226,11 +217,10 @@ namespace WinFormsApp1
         private System.Windows.Forms.Button box7;
         private System.Windows.Forms.Button box8;
         private System.Windows.Forms.Button box9;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button NewGame;
         private System.Windows.Forms.Button Exit;
         private System.Windows.Forms.Button About;
+        private System.Windows.Forms.RichTextBox playerturn;
     }
 }
 

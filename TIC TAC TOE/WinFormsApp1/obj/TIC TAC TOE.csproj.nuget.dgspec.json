@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Roselle\\source\\repos\\Calculator_CAPISTRANO\\WinFormsApp1\\WinFormsApp1\\TIC TAC TOE.csproj": {}
+    "C:\\Users\\Roselle\\source\\repos\\Calculator_CAPISTRANO\\TIC TAC TOE\\WinFormsApp1\\TIC TAC TOE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Roselle\\source\\repos\\Calculator_CAPISTRANO\\WinFormsApp1\\WinFormsApp1\\TIC TAC TOE.csproj": {
+    "C:\\Users\\Roselle\\source\\repos\\Calculator_CAPISTRANO\\TIC TAC TOE\\WinFormsApp1\\TIC TAC TOE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Roselle\\source\\repos\\Calculator_CAPISTRANO\\WinFormsApp1\\WinFormsApp1\\TIC TAC TOE.csproj",
+        "projectUniqueName": "C:\\Users\\Roselle\\source\\repos\\Calculator_CAPISTRANO\\TIC TAC TOE\\WinFormsApp1\\TIC TAC TOE.csproj",
         "projectName": "TIC TAC TOE",
-        "projectPath": "C:\\Users\\Roselle\\source\\repos\\Calculator_CAPISTRANO\\WinFormsApp1\\WinFormsApp1\\TIC TAC TOE.csproj",
+        "projectPath": "C:\\Users\\Roselle\\source\\repos\\Calculator_CAPISTRANO\\TIC TAC TOE\\WinFormsApp1\\TIC TAC TOE.csproj",
         "packagesPath": "C:\\Users\\Roselle\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Roselle\\source\\repos\\Calculator_CAPISTRANO\\WinFormsApp1\\WinFormsApp1\\obj\\",
+        "outputPath": "C:\\Users\\Roselle\\source\\repos\\Calculator_CAPISTRANO\\TIC TAC TOE\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Roselle\\AppData\\Roaming\\NuGet\\NuGet.Config",
