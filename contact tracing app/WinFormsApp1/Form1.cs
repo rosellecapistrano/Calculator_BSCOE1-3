@@ -26,5 +26,10 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void userinput_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

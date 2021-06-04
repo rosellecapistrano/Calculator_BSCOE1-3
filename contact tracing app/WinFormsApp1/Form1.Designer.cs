@@ -50,6 +50,7 @@ namespace WinFormsApp1
             this.userinput.Size = new System.Drawing.Size(294, 96);
             this.userinput.TabIndex = 1;
             this.userinput.Text = "";
+            this.userinput.TextChanged += new System.EventHandler(this.userinput_TextChanged);
             // 
             // contact_tracing_app
             // 
