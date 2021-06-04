@@ -1,0 +1,18 @@
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\bin\Debug\net5.0-windows\Contact Tracing App.exe
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\bin\Debug\net5.0-windows\Contact Tracing App.deps.json
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\bin\Debug\net5.0-windows\Contact Tracing App.runtimeconfig.json
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\bin\Debug\net5.0-windows\Contact Tracing App.runtimeconfig.dev.json
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\bin\Debug\net5.0-windows\Contact Tracing App.dll
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\bin\Debug\net5.0-windows\ref\Contact Tracing App.dll
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\bin\Debug\net5.0-windows\Contact Tracing App.pdb
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\obj\Debug\net5.0-windows\Contact Tracing App.csprojAssemblyReference.cache
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\obj\Debug\net5.0-windows\WinFormsApp1.contact_tracing_app.resources
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\obj\Debug\net5.0-windows\Contact Tracing App.csproj.GenerateResource.cache
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\obj\Debug\net5.0-windows\Contact Tracing App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\obj\Debug\net5.0-windows\Contact Tracing App.AssemblyInfoInputs.cache
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\obj\Debug\net5.0-windows\Contact Tracing App.AssemblyInfo.cs
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\obj\Debug\net5.0-windows\Contact Tracing App.csproj.CoreCompileInputs.cache
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\obj\Debug\net5.0-windows\Contact Tracing App.dll
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\obj\Debug\net5.0-windows\ref\Contact Tracing App.dll
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\obj\Debug\net5.0-windows\Contact Tracing App.pdb
+C:\Users\Roselle\source\repos\Calculator_CAPISTRANO\contact tracing app\WinFormsApp1\obj\Debug\net5.0-windows\Contact Tracing App.genruntimeconfig.cache
