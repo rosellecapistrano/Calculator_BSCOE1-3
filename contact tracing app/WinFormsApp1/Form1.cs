@@ -21,10 +21,11 @@ namespace WinFormsApp1
         private void START_Click(object sender, EventArgs e)
         {
             StreamWriter outputFile;
-            outputFile = File.CreateText("contact_tracing.txt");
+            outputFile = File.AppendText("contact_tracing.txt");
             outputFile.WriteLine(nametxt);
             outputFile.WriteLine(addresstxt);
             outputFile.WriteLine(temperaturetxt);
+            outputFile.WriteLine("=================");
             outputFile.Close();
         }
 
@@ -41,6 +42,27 @@ namespace WinFormsApp1
         private void address_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void clear_Click(object sender, EventArgs e)
+        {
+            nametxt.Clear();
+            addresstxt.Clear();
+            temperaturetxt.Clear();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            starting.Visible = false;
+            name.Visible = true;
+            address.Visible = true;
+            temperature.Visible = true;
+            nametxt.Visible = true;
+            addresstxt.Visible = true;
+            temperaturetxt.Visible = true;
+            welcome.Visible = true;
+            DONE.Visible = true;
+            clear.Visible = true;
         }
     }
 }

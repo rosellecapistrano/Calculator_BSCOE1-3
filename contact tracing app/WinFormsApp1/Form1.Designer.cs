@@ -38,16 +38,19 @@ namespace WinFormsApp1
             this.addresstxt = new System.Windows.Forms.TextBox();
             this.temperature = new System.Windows.Forms.Label();
             this.temperaturetxt = new System.Windows.Forms.TextBox();
+            this.clear = new System.Windows.Forms.Button();
+            this.starting = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // DONE
             // 
-            this.DONE.Location = new System.Drawing.Point(117, 300);
+            this.DONE.Location = new System.Drawing.Point(117, 258);
             this.DONE.Name = "DONE";
             this.DONE.Size = new System.Drawing.Size(130, 43);
             this.DONE.TabIndex = 0;
             this.DONE.Text = "DONE";
             this.DONE.UseVisualStyleBackColor = true;
+            this.DONE.Visible = false;
             this.DONE.Click += new System.EventHandler(this.START_Click);
             // 
             // welcome
@@ -59,6 +62,7 @@ namespace WinFormsApp1
             this.welcome.TabIndex = 1;
             this.welcome.Text = "Contact Tracing App";
             this.welcome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.welcome.Visible = false;
             // 
             // name
             // 
@@ -68,6 +72,7 @@ namespace WinFormsApp1
             this.name.Size = new System.Drawing.Size(42, 15);
             this.name.TabIndex = 2;
             this.name.Text = "Name:";
+            this.name.Visible = false;
             // 
             // nametxt
             // 
@@ -75,6 +80,7 @@ namespace WinFormsApp1
             this.nametxt.Name = "nametxt";
             this.nametxt.Size = new System.Drawing.Size(206, 23);
             this.nametxt.TabIndex = 3;
+            this.nametxt.Visible = false;
             // 
             // address
             // 
@@ -84,6 +90,7 @@ namespace WinFormsApp1
             this.address.Size = new System.Drawing.Size(32, 15);
             this.address.TabIndex = 4;
             this.address.Text = "Add:";
+            this.address.Visible = false;
             this.address.Click += new System.EventHandler(this.address_Click);
             // 
             // addresstxt
@@ -92,6 +99,7 @@ namespace WinFormsApp1
             this.addresstxt.Name = "addresstxt";
             this.addresstxt.Size = new System.Drawing.Size(206, 23);
             this.addresstxt.TabIndex = 5;
+            this.addresstxt.Visible = false;
             // 
             // temperature
             // 
@@ -101,6 +109,7 @@ namespace WinFormsApp1
             this.temperature.Size = new System.Drawing.Size(39, 15);
             this.temperature.TabIndex = 6;
             this.temperature.Text = "Temp:";
+            this.temperature.Visible = false;
             // 
             // temperaturetxt
             // 
@@ -108,12 +117,36 @@ namespace WinFormsApp1
             this.temperaturetxt.Name = "temperaturetxt";
             this.temperaturetxt.Size = new System.Drawing.Size(206, 23);
             this.temperaturetxt.TabIndex = 7;
+            this.temperaturetxt.Visible = false;
+            // 
+            // clear
+            // 
+            this.clear.Location = new System.Drawing.Point(117, 307);
+            this.clear.Name = "clear";
+            this.clear.Size = new System.Drawing.Size(130, 43);
+            this.clear.TabIndex = 8;
+            this.clear.Text = "CLEAR";
+            this.clear.UseVisualStyleBackColor = true;
+            this.clear.Visible = false;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
+            // 
+            // starting
+            // 
+            this.starting.Location = new System.Drawing.Point(117, 209);
+            this.starting.Name = "starting";
+            this.starting.Size = new System.Drawing.Size(130, 43);
+            this.starting.TabIndex = 9;
+            this.starting.Text = "START";
+            this.starting.UseVisualStyleBackColor = true;
+            this.starting.Click += new System.EventHandler(this.button1_Click);
             // 
             // contact_tracing_app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(378, 355);
+            this.Controls.Add(this.starting);
+            this.Controls.Add(this.clear);
             this.Controls.Add(this.temperaturetxt);
             this.Controls.Add(this.temperature);
             this.Controls.Add(this.addresstxt);
@@ -142,6 +175,8 @@ namespace WinFormsApp1
         private System.Windows.Forms.TextBox addresstxt;
         private System.Windows.Forms.Label temperature;
         private System.Windows.Forms.TextBox temperaturetxt;
+        private System.Windows.Forms.Button clear;
+        private System.Windows.Forms.Button starting;
     }
 }
 
