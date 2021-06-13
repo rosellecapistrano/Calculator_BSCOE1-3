@@ -48,12 +48,12 @@ namespace Calculator_CAPISTRANO
             this.DIVIDE = new System.Windows.Forms.Button();
             this.CLEAR = new System.Windows.Forms.Button();
             this.ERASE = new System.Windows.Forms.Button();
-            this.TEXTBOX1 = new System.Windows.Forms.RichTextBox();
+            this.TEXTBOX1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // ZERO
             // 
-            this.ZERO.Location = new System.Drawing.Point(99, 414);
+            this.ZERO.Location = new System.Drawing.Point(99, 333);
             this.ZERO.Name = "ZERO";
             this.ZERO.Size = new System.Drawing.Size(75, 61);
             this.ZERO.TabIndex = 0;
@@ -63,7 +63,7 @@ namespace Calculator_CAPISTRANO
             // 
             // TWO
             // 
-            this.TWO.Location = new System.Drawing.Point(99, 347);
+            this.TWO.Location = new System.Drawing.Point(99, 266);
             this.TWO.Name = "TWO";
             this.TWO.Size = new System.Drawing.Size(75, 61);
             this.TWO.TabIndex = 1;
@@ -73,25 +73,27 @@ namespace Calculator_CAPISTRANO
             // 
             // FIVE
             // 
-            this.FIVE.Location = new System.Drawing.Point(99, 280);
+            this.FIVE.Location = new System.Drawing.Point(99, 199);
             this.FIVE.Name = "FIVE";
             this.FIVE.Size = new System.Drawing.Size(75, 61);
             this.FIVE.TabIndex = 2;
             this.FIVE.Text = "5";
             this.FIVE.UseVisualStyleBackColor = true;
+            this.FIVE.Click += new System.EventHandler(this.FIVE_Click);
             // 
             // EIGHT
             // 
-            this.EIGHT.Location = new System.Drawing.Point(99, 213);
+            this.EIGHT.Location = new System.Drawing.Point(99, 132);
             this.EIGHT.Name = "EIGHT";
             this.EIGHT.Size = new System.Drawing.Size(75, 61);
             this.EIGHT.TabIndex = 3;
             this.EIGHT.Text = "8";
             this.EIGHT.UseVisualStyleBackColor = true;
+            this.EIGHT.Click += new System.EventHandler(this.EIGHT_Click);
             // 
             // AC
             // 
-            this.AC.Location = new System.Drawing.Point(12, 414);
+            this.AC.Location = new System.Drawing.Point(12, 333);
             this.AC.Name = "AC";
             this.AC.Size = new System.Drawing.Size(75, 61);
             this.AC.TabIndex = 4;
@@ -101,7 +103,7 @@ namespace Calculator_CAPISTRANO
             // 
             // EQUALS
             // 
-            this.EQUALS.Location = new System.Drawing.Point(268, 347);
+            this.EQUALS.Location = new System.Drawing.Point(268, 266);
             this.EQUALS.Name = "EQUALS";
             this.EQUALS.Size = new System.Drawing.Size(75, 128);
             this.EQUALS.TabIndex = 5;
@@ -111,70 +113,77 @@ namespace Calculator_CAPISTRANO
             // 
             // POINT
             // 
-            this.POINT.Location = new System.Drawing.Point(183, 414);
+            this.POINT.Location = new System.Drawing.Point(183, 333);
             this.POINT.Name = "POINT";
             this.POINT.Size = new System.Drawing.Size(75, 61);
             this.POINT.TabIndex = 6;
             this.POINT.Text = ".";
             this.POINT.UseVisualStyleBackColor = true;
+            this.POINT.Click += new System.EventHandler(this.POINT_Click);
             // 
             // THREE
             // 
-            this.THREE.Location = new System.Drawing.Point(183, 347);
+            this.THREE.Location = new System.Drawing.Point(183, 266);
             this.THREE.Name = "THREE";
             this.THREE.Size = new System.Drawing.Size(75, 61);
             this.THREE.TabIndex = 7;
             this.THREE.Text = "3";
             this.THREE.UseVisualStyleBackColor = true;
+            this.THREE.Click += new System.EventHandler(this.THREE_Click);
             // 
             // SIX
             // 
-            this.SIX.Location = new System.Drawing.Point(183, 280);
+            this.SIX.Location = new System.Drawing.Point(183, 199);
             this.SIX.Name = "SIX";
             this.SIX.Size = new System.Drawing.Size(75, 61);
             this.SIX.TabIndex = 8;
             this.SIX.Text = "6";
             this.SIX.UseVisualStyleBackColor = true;
+            this.SIX.Click += new System.EventHandler(this.SIX_Click);
             // 
             // NINE
             // 
-            this.NINE.Location = new System.Drawing.Point(183, 213);
+            this.NINE.Location = new System.Drawing.Point(183, 132);
             this.NINE.Name = "NINE";
             this.NINE.Size = new System.Drawing.Size(75, 61);
             this.NINE.TabIndex = 9;
             this.NINE.Text = "9";
             this.NINE.UseVisualStyleBackColor = true;
+            this.NINE.Click += new System.EventHandler(this.NINE_Click);
             // 
             // ONE
             // 
-            this.ONE.Location = new System.Drawing.Point(12, 347);
+            this.ONE.Location = new System.Drawing.Point(12, 266);
             this.ONE.Name = "ONE";
             this.ONE.Size = new System.Drawing.Size(75, 61);
             this.ONE.TabIndex = 10;
             this.ONE.Text = "1";
             this.ONE.UseVisualStyleBackColor = true;
+            this.ONE.Click += new System.EventHandler(this.ONE_Click);
             // 
             // FOUR
             // 
-            this.FOUR.Location = new System.Drawing.Point(12, 280);
+            this.FOUR.Location = new System.Drawing.Point(12, 199);
             this.FOUR.Name = "FOUR";
             this.FOUR.Size = new System.Drawing.Size(75, 61);
             this.FOUR.TabIndex = 11;
             this.FOUR.Text = "4";
             this.FOUR.UseVisualStyleBackColor = true;
+            this.FOUR.Click += new System.EventHandler(this.FOUR_Click);
             // 
             // SEVEN
             // 
-            this.SEVEN.Location = new System.Drawing.Point(12, 213);
+            this.SEVEN.Location = new System.Drawing.Point(12, 132);
             this.SEVEN.Name = "SEVEN";
             this.SEVEN.Size = new System.Drawing.Size(75, 61);
             this.SEVEN.TabIndex = 12;
             this.SEVEN.Text = "7";
             this.SEVEN.UseVisualStyleBackColor = true;
+            this.SEVEN.Click += new System.EventHandler(this.SEVEN_Click);
             // 
             // PLUS
             // 
-            this.PLUS.Location = new System.Drawing.Point(268, 280);
+            this.PLUS.Location = new System.Drawing.Point(268, 199);
             this.PLUS.Name = "PLUS";
             this.PLUS.Size = new System.Drawing.Size(75, 61);
             this.PLUS.TabIndex = 13;
@@ -184,63 +193,71 @@ namespace Calculator_CAPISTRANO
             // 
             // MINUS
             // 
-            this.MINUS.Location = new System.Drawing.Point(268, 213);
+            this.MINUS.Location = new System.Drawing.Point(268, 132);
             this.MINUS.Name = "MINUS";
             this.MINUS.Size = new System.Drawing.Size(75, 61);
             this.MINUS.TabIndex = 14;
             this.MINUS.Text = "-";
             this.MINUS.UseVisualStyleBackColor = true;
+            this.MINUS.Click += new System.EventHandler(this.MINUS_Click);
             // 
             // TIMES
             // 
-            this.TIMES.Location = new System.Drawing.Point(268, 146);
+            this.TIMES.Location = new System.Drawing.Point(268, 65);
             this.TIMES.Name = "TIMES";
             this.TIMES.Size = new System.Drawing.Size(75, 61);
             this.TIMES.TabIndex = 15;
             this.TIMES.Text = "x";
             this.TIMES.UseVisualStyleBackColor = true;
+            this.TIMES.Click += new System.EventHandler(this.TIMES_Click);
             // 
             // DIVIDE
             // 
-            this.DIVIDE.Location = new System.Drawing.Point(183, 146);
+            this.DIVIDE.Location = new System.Drawing.Point(183, 65);
             this.DIVIDE.Name = "DIVIDE";
             this.DIVIDE.Size = new System.Drawing.Size(75, 61);
             this.DIVIDE.TabIndex = 19;
             this.DIVIDE.Text = "÷";
             this.DIVIDE.UseVisualStyleBackColor = true;
+            this.DIVIDE.Click += new System.EventHandler(this.DIVIDE_Click);
             // 
             // CLEAR
             // 
-            this.CLEAR.Location = new System.Drawing.Point(99, 146);
+            this.CLEAR.Location = new System.Drawing.Point(99, 65);
             this.CLEAR.Name = "CLEAR";
             this.CLEAR.Size = new System.Drawing.Size(75, 61);
             this.CLEAR.TabIndex = 20;
             this.CLEAR.Text = "C";
             this.CLEAR.UseVisualStyleBackColor = true;
+            this.CLEAR.Click += new System.EventHandler(this.CLEAR_Click);
             // 
             // ERASE
             // 
-            this.ERASE.Location = new System.Drawing.Point(12, 146);
+            this.ERASE.Location = new System.Drawing.Point(12, 65);
             this.ERASE.Name = "ERASE";
             this.ERASE.Size = new System.Drawing.Size(75, 61);
             this.ERASE.TabIndex = 21;
             this.ERASE.Text = "⌫";
             this.ERASE.UseVisualStyleBackColor = true;
+            this.ERASE.Click += new System.EventHandler(this.ERASE_Click);
             // 
             // TEXTBOX1
             // 
-            this.TEXTBOX1.Location = new System.Drawing.Point(12, 35);
+            this.TEXTBOX1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TEXTBOX1.Location = new System.Drawing.Point(12, 12);
+            this.TEXTBOX1.Multiline = true;
             this.TEXTBOX1.Name = "TEXTBOX1";
-            this.TEXTBOX1.Size = new System.Drawing.Size(331, 66);
-            this.TEXTBOX1.TabIndex = 22;
-            this.TEXTBOX1.Text = "";
-            this.TEXTBOX1.TextChanged += new System.EventHandler(this.TEXTBOX1_TextChanged);
+            this.TEXTBOX1.Size = new System.Drawing.Size(331, 48);
+            this.TEXTBOX1.TabIndex = 23;
+            this.TEXTBOX1.Text = "0";
+            this.TEXTBOX1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.TEXTBOX1.TextChanged += new System.EventHandler(this.TEXTBOX1_TextChanged_1);
             // 
             // CALCULATOR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 503);
+            this.ClientSize = new System.Drawing.Size(355, 403);
             this.Controls.Add(this.TEXTBOX1);
             this.Controls.Add(this.ERASE);
             this.Controls.Add(this.CLEAR);
@@ -261,10 +278,12 @@ namespace Calculator_CAPISTRANO
             this.Controls.Add(this.FIVE);
             this.Controls.Add(this.TWO);
             this.Controls.Add(this.ZERO);
+            this.MaximizeBox = false;
             this.Name = "CALCULATOR";
             this.Text = "Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -289,7 +308,7 @@ namespace Calculator_CAPISTRANO
         private System.Windows.Forms.Button DIVIDE;
         private System.Windows.Forms.Button CLEAR;
         private System.Windows.Forms.Button ERASE;
-        private System.Windows.Forms.RichTextBox TEXTBOX1;
+        private System.Windows.Forms.TextBox TEXTBOX1;
     }
 }
 
