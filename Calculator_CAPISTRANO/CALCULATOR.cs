@@ -12,6 +12,10 @@ namespace Calculator_CAPISTRANO
 {
     public partial class CALCULATOR : Form
     {
+        float num = 0;
+        bool btn_clicked = false;
+        String arithmetic = "";
+
         public CALCULATOR()
         {
             InitializeComponent();
@@ -19,17 +23,12 @@ namespace Calculator_CAPISTRANO
 
         private void button6_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void PLUS_Click(object sender, EventArgs e)
-        {
-            TEXTBOX1.AppendText("+");
         }
 
         private void AC_Click(object sender, EventArgs e)
@@ -39,38 +38,31 @@ namespace Calculator_CAPISTRANO
 
         private void ERASE_Click(object sender, EventArgs e)
         {
-            TEXTBOX1.Text.Remove(0, TEXTBOX1.Text.Length - 1);
+            TEXTBOX1.Text = TEXTBOX1.Text.Substring(0, TEXTBOX1.Text.Length - 1);
         }
 
         private void CLEAR_Click(object sender, EventArgs e)
         {
             TEXTBOX1.Clear();
-        }
-
-        private void TIMES_Click(object sender, EventArgs e)
-        {
-            TEXTBOX1.AppendText("*");
-        }
-
-        private void MINUS_Click(object sender, EventArgs e)
-        {
-            TEXTBOX1.AppendText("-");
-        }
-
-        private void DIVIDE_Click(object sender, EventArgs e)
-        {
-            TEXTBOX1.AppendText("/");
-        }
-
-        private void POINT_Click(object sender, EventArgs e)
-        {
-            TEXTBOX1.AppendText(".");
+            TEXTBOX1.Text = "0";
         }
 
         private void btn_Click(object sender, EventArgs e)
         {
+            if (TEXTBOX1.Text == "0" | btn_clicked)
+            {
+                TEXTBOX1.Clear();
+            }
             Button n = (Button)sender;
-            TEXTBOX1.Text = TEXTBOX1.Text + n; 
+            TEXTBOX1.Text = TEXTBOX1.Text + n.Text;
+            num = float.Parse(TEXTBOX1.Text);
+        }
+
+        private void operation_click(object sender, EventArgs e)
+        {
+            Button n = (Button)sender;
+            arithmetic = n.Text;
+            btn_clicked = true;
         }
     }
 }

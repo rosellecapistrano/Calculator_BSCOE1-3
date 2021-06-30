@@ -42,10 +42,6 @@ namespace Calculator_CAPISTRANO
             this.ONE = new System.Windows.Forms.Button();
             this.FOUR = new System.Windows.Forms.Button();
             this.SEVEN = new System.Windows.Forms.Button();
-            this.PLUS = new System.Windows.Forms.Button();
-            this.MINUS = new System.Windows.Forms.Button();
-            this.TIMES = new System.Windows.Forms.Button();
-            this.DIVIDE = new System.Windows.Forms.Button();
             this.CLEAR = new System.Windows.Forms.Button();
             this.ERASE = new System.Windows.Forms.Button();
             this.TEXTBOX1 = new System.Windows.Forms.TextBox();
@@ -53,6 +49,10 @@ namespace Calculator_CAPISTRANO
             this.btnMMinus = new System.Windows.Forms.Button();
             this.MemoryClear = new System.Windows.Forms.Button();
             this.memory = new System.Windows.Forms.Button();
+            this.btnPLUS = new System.Windows.Forms.Button();
+            this.btnMINUS = new System.Windows.Forms.Button();
+            this.btnTIMES = new System.Windows.Forms.Button();
+            this.btnDIVIDE = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ZERO
@@ -124,7 +124,7 @@ namespace Calculator_CAPISTRANO
             this.POINT.TabIndex = 6;
             this.POINT.Text = ".";
             this.POINT.UseVisualStyleBackColor = true;
-            this.POINT.Click += new System.EventHandler(this.POINT_Click);
+            this.POINT.Click += new System.EventHandler(this.btn_Click);
             // 
             // THREE
             // 
@@ -185,50 +185,6 @@ namespace Calculator_CAPISTRANO
             this.SEVEN.Text = "7";
             this.SEVEN.UseVisualStyleBackColor = true;
             this.SEVEN.Click += new System.EventHandler(this.btn_Click);
-            // 
-            // PLUS
-            // 
-            this.PLUS.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PLUS.Location = new System.Drawing.Point(268, 272);
-            this.PLUS.Name = "PLUS";
-            this.PLUS.Size = new System.Drawing.Size(75, 45);
-            this.PLUS.TabIndex = 13;
-            this.PLUS.Text = "+";
-            this.PLUS.UseVisualStyleBackColor = true;
-            this.PLUS.Click += new System.EventHandler(this.PLUS_Click);
-            // 
-            // MINUS
-            // 
-            this.MINUS.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.MINUS.Location = new System.Drawing.Point(268, 221);
-            this.MINUS.Name = "MINUS";
-            this.MINUS.Size = new System.Drawing.Size(75, 45);
-            this.MINUS.TabIndex = 14;
-            this.MINUS.Text = "-";
-            this.MINUS.UseVisualStyleBackColor = true;
-            this.MINUS.Click += new System.EventHandler(this.MINUS_Click);
-            // 
-            // TIMES
-            // 
-            this.TIMES.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.TIMES.Location = new System.Drawing.Point(268, 170);
-            this.TIMES.Name = "TIMES";
-            this.TIMES.Size = new System.Drawing.Size(75, 45);
-            this.TIMES.TabIndex = 15;
-            this.TIMES.Text = "x";
-            this.TIMES.UseVisualStyleBackColor = true;
-            this.TIMES.Click += new System.EventHandler(this.TIMES_Click);
-            // 
-            // DIVIDE
-            // 
-            this.DIVIDE.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DIVIDE.Location = new System.Drawing.Point(268, 119);
-            this.DIVIDE.Name = "DIVIDE";
-            this.DIVIDE.Size = new System.Drawing.Size(75, 45);
-            this.DIVIDE.TabIndex = 19;
-            this.DIVIDE.Text = "÷";
-            this.DIVIDE.UseVisualStyleBackColor = true;
-            this.DIVIDE.Click += new System.EventHandler(this.DIVIDE_Click);
             // 
             // CLEAR
             // 
@@ -298,11 +254,55 @@ namespace Calculator_CAPISTRANO
             this.memory.Text = "M";
             this.memory.UseVisualStyleBackColor = true;
             // 
+            // btnPLUS
+            // 
+            this.btnPLUS.Location = new System.Drawing.Point(268, 272);
+            this.btnPLUS.Name = "btnPLUS";
+            this.btnPLUS.Size = new System.Drawing.Size(75, 45);
+            this.btnPLUS.TabIndex = 28;
+            this.btnPLUS.Text = "+";
+            this.btnPLUS.UseVisualStyleBackColor = true;
+            this.btnPLUS.Click += new System.EventHandler(this.operation_click);
+            // 
+            // btnMINUS
+            // 
+            this.btnMINUS.Location = new System.Drawing.Point(268, 221);
+            this.btnMINUS.Name = "btnMINUS";
+            this.btnMINUS.Size = new System.Drawing.Size(75, 45);
+            this.btnMINUS.TabIndex = 29;
+            this.btnMINUS.Text = "-";
+            this.btnMINUS.UseVisualStyleBackColor = true;
+            this.btnMINUS.Click += new System.EventHandler(this.operation_click);
+            // 
+            // btnTIMES
+            // 
+            this.btnTIMES.Location = new System.Drawing.Point(268, 170);
+            this.btnTIMES.Name = "btnTIMES";
+            this.btnTIMES.Size = new System.Drawing.Size(75, 45);
+            this.btnTIMES.TabIndex = 30;
+            this.btnTIMES.Text = "x";
+            this.btnTIMES.UseVisualStyleBackColor = true;
+            this.btnTIMES.Click += new System.EventHandler(this.operation_click);
+            // 
+            // btnDIVIDE
+            // 
+            this.btnDIVIDE.Location = new System.Drawing.Point(268, 119);
+            this.btnDIVIDE.Name = "btnDIVIDE";
+            this.btnDIVIDE.Size = new System.Drawing.Size(75, 45);
+            this.btnDIVIDE.TabIndex = 31;
+            this.btnDIVIDE.Text = "/";
+            this.btnDIVIDE.UseVisualStyleBackColor = true;
+            this.btnDIVIDE.Click += new System.EventHandler(this.operation_click);
+            // 
             // CALCULATOR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(353, 374);
+            this.Controls.Add(this.btnDIVIDE);
+            this.Controls.Add(this.btnTIMES);
+            this.Controls.Add(this.btnMINUS);
+            this.Controls.Add(this.btnPLUS);
             this.Controls.Add(this.memory);
             this.Controls.Add(this.MemoryClear);
             this.Controls.Add(this.btnMMinus);
@@ -310,10 +310,6 @@ namespace Calculator_CAPISTRANO
             this.Controls.Add(this.TEXTBOX1);
             this.Controls.Add(this.ERASE);
             this.Controls.Add(this.CLEAR);
-            this.Controls.Add(this.DIVIDE);
-            this.Controls.Add(this.TIMES);
-            this.Controls.Add(this.MINUS);
-            this.Controls.Add(this.PLUS);
             this.Controls.Add(this.SEVEN);
             this.Controls.Add(this.FOUR);
             this.Controls.Add(this.ONE);
@@ -351,10 +347,6 @@ namespace Calculator_CAPISTRANO
         private System.Windows.Forms.Button ONE;
         private System.Windows.Forms.Button FOUR;
         private System.Windows.Forms.Button SEVEN;
-        private System.Windows.Forms.Button PLUS;
-        private System.Windows.Forms.Button MINUS;
-        private System.Windows.Forms.Button TIMES;
-        private System.Windows.Forms.Button DIVIDE;
         private System.Windows.Forms.Button CLEAR;
         private System.Windows.Forms.Button ERASE;
         private System.Windows.Forms.TextBox TEXTBOX1;
@@ -362,6 +354,10 @@ namespace Calculator_CAPISTRANO
         private System.Windows.Forms.Button btnMMinus;
         private System.Windows.Forms.Button MemoryClear;
         private System.Windows.Forms.Button memory;
+        private System.Windows.Forms.Button btnPLUS;
+        private System.Windows.Forms.Button btnMINUS;
+        private System.Windows.Forms.Button btnTIMES;
+        private System.Windows.Forms.Button btnDIVIDE;
     }
 }
 
