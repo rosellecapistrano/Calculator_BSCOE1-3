@@ -53,11 +53,13 @@ namespace Calculator_CAPISTRANO
             this.btnMINUS = new System.Windows.Forms.Button();
             this.btnTIMES = new System.Windows.Forms.Button();
             this.btnDIVIDE = new System.Windows.Forms.Button();
+            this.memorycalc = new System.Windows.Forms.Button();
+            this.aboutcal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ZERO
             // 
-            this.ZERO.Location = new System.Drawing.Point(12, 323);
+            this.ZERO.Location = new System.Drawing.Point(12, 340);
             this.ZERO.Name = "ZERO";
             this.ZERO.Size = new System.Drawing.Size(162, 45);
             this.ZERO.TabIndex = 0;
@@ -67,7 +69,7 @@ namespace Calculator_CAPISTRANO
             // 
             // TWO
             // 
-            this.TWO.Location = new System.Drawing.Point(99, 272);
+            this.TWO.Location = new System.Drawing.Point(99, 289);
             this.TWO.Name = "TWO";
             this.TWO.Size = new System.Drawing.Size(75, 45);
             this.TWO.TabIndex = 1;
@@ -77,7 +79,7 @@ namespace Calculator_CAPISTRANO
             // 
             // FIVE
             // 
-            this.FIVE.Location = new System.Drawing.Point(99, 221);
+            this.FIVE.Location = new System.Drawing.Point(99, 238);
             this.FIVE.Name = "FIVE";
             this.FIVE.Size = new System.Drawing.Size(75, 45);
             this.FIVE.TabIndex = 2;
@@ -87,7 +89,7 @@ namespace Calculator_CAPISTRANO
             // 
             // EIGHT
             // 
-            this.EIGHT.Location = new System.Drawing.Point(99, 170);
+            this.EIGHT.Location = new System.Drawing.Point(99, 187);
             this.EIGHT.Name = "EIGHT";
             this.EIGHT.Size = new System.Drawing.Size(75, 45);
             this.EIGHT.TabIndex = 3;
@@ -97,7 +99,7 @@ namespace Calculator_CAPISTRANO
             // 
             // AC
             // 
-            this.AC.Location = new System.Drawing.Point(99, 119);
+            this.AC.Location = new System.Drawing.Point(99, 136);
             this.AC.Name = "AC";
             this.AC.Size = new System.Drawing.Size(75, 45);
             this.AC.TabIndex = 4;
@@ -107,18 +109,18 @@ namespace Calculator_CAPISTRANO
             // 
             // EQUALS
             // 
-            this.EQUALS.Location = new System.Drawing.Point(268, 323);
+            this.EQUALS.Location = new System.Drawing.Point(268, 340);
             this.EQUALS.Name = "EQUALS";
             this.EQUALS.Size = new System.Drawing.Size(75, 45);
             this.EQUALS.TabIndex = 5;
             this.EQUALS.Text = "=";
             this.EQUALS.UseVisualStyleBackColor = true;
-            this.EQUALS.Click += new System.EventHandler(this.button6_Click);
+            this.EQUALS.Click += new System.EventHandler(this.equals_Click);
             // 
             // POINT
             // 
             this.POINT.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.POINT.Location = new System.Drawing.Point(183, 323);
+            this.POINT.Location = new System.Drawing.Point(183, 340);
             this.POINT.Name = "POINT";
             this.POINT.Size = new System.Drawing.Size(75, 45);
             this.POINT.TabIndex = 6;
@@ -128,7 +130,7 @@ namespace Calculator_CAPISTRANO
             // 
             // THREE
             // 
-            this.THREE.Location = new System.Drawing.Point(183, 272);
+            this.THREE.Location = new System.Drawing.Point(183, 289);
             this.THREE.Name = "THREE";
             this.THREE.Size = new System.Drawing.Size(75, 45);
             this.THREE.TabIndex = 7;
@@ -138,7 +140,7 @@ namespace Calculator_CAPISTRANO
             // 
             // SIX
             // 
-            this.SIX.Location = new System.Drawing.Point(183, 221);
+            this.SIX.Location = new System.Drawing.Point(183, 238);
             this.SIX.Name = "SIX";
             this.SIX.Size = new System.Drawing.Size(75, 45);
             this.SIX.TabIndex = 8;
@@ -148,7 +150,7 @@ namespace Calculator_CAPISTRANO
             // 
             // NINE
             // 
-            this.NINE.Location = new System.Drawing.Point(183, 170);
+            this.NINE.Location = new System.Drawing.Point(183, 187);
             this.NINE.Name = "NINE";
             this.NINE.Size = new System.Drawing.Size(75, 45);
             this.NINE.TabIndex = 9;
@@ -158,7 +160,7 @@ namespace Calculator_CAPISTRANO
             // 
             // ONE
             // 
-            this.ONE.Location = new System.Drawing.Point(12, 272);
+            this.ONE.Location = new System.Drawing.Point(12, 289);
             this.ONE.Name = "ONE";
             this.ONE.Size = new System.Drawing.Size(75, 45);
             this.ONE.TabIndex = 10;
@@ -168,7 +170,7 @@ namespace Calculator_CAPISTRANO
             // 
             // FOUR
             // 
-            this.FOUR.Location = new System.Drawing.Point(12, 221);
+            this.FOUR.Location = new System.Drawing.Point(12, 238);
             this.FOUR.Name = "FOUR";
             this.FOUR.Size = new System.Drawing.Size(75, 45);
             this.FOUR.TabIndex = 11;
@@ -178,7 +180,7 @@ namespace Calculator_CAPISTRANO
             // 
             // SEVEN
             // 
-            this.SEVEN.Location = new System.Drawing.Point(12, 170);
+            this.SEVEN.Location = new System.Drawing.Point(12, 187);
             this.SEVEN.Name = "SEVEN";
             this.SEVEN.Size = new System.Drawing.Size(75, 45);
             this.SEVEN.TabIndex = 12;
@@ -188,7 +190,7 @@ namespace Calculator_CAPISTRANO
             // 
             // CLEAR
             // 
-            this.CLEAR.Location = new System.Drawing.Point(183, 119);
+            this.CLEAR.Location = new System.Drawing.Point(183, 136);
             this.CLEAR.Name = "CLEAR";
             this.CLEAR.Size = new System.Drawing.Size(75, 45);
             this.CLEAR.TabIndex = 20;
@@ -198,7 +200,7 @@ namespace Calculator_CAPISTRANO
             // 
             // ERASE
             // 
-            this.ERASE.Location = new System.Drawing.Point(12, 119);
+            this.ERASE.Location = new System.Drawing.Point(12, 136);
             this.ERASE.Name = "ERASE";
             this.ERASE.Size = new System.Drawing.Size(75, 45);
             this.ERASE.TabIndex = 21;
@@ -209,18 +211,16 @@ namespace Calculator_CAPISTRANO
             // TEXTBOX1
             // 
             this.TEXTBOX1.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TEXTBOX1.Location = new System.Drawing.Point(12, 12);
-            this.TEXTBOX1.Multiline = true;
+            this.TEXTBOX1.Location = new System.Drawing.Point(12, 31);
             this.TEXTBOX1.Name = "TEXTBOX1";
-            this.TEXTBOX1.Size = new System.Drawing.Size(331, 48);
+            this.TEXTBOX1.Size = new System.Drawing.Size(331, 39);
             this.TEXTBOX1.TabIndex = 23;
-            this.TEXTBOX1.Text = "0";
             this.TEXTBOX1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.TEXTBOX1.TextChanged += new System.EventHandler(this.Form1_Load);
             // 
             // btnMPLUS
             // 
-            this.btnMPLUS.Location = new System.Drawing.Point(99, 68);
+            this.btnMPLUS.Location = new System.Drawing.Point(99, 85);
             this.btnMPLUS.Name = "btnMPLUS";
             this.btnMPLUS.Size = new System.Drawing.Size(75, 45);
             this.btnMPLUS.TabIndex = 24;
@@ -229,7 +229,7 @@ namespace Calculator_CAPISTRANO
             // 
             // btnMMinus
             // 
-            this.btnMMinus.Location = new System.Drawing.Point(183, 68);
+            this.btnMMinus.Location = new System.Drawing.Point(183, 85);
             this.btnMMinus.Name = "btnMMinus";
             this.btnMMinus.Size = new System.Drawing.Size(75, 45);
             this.btnMMinus.TabIndex = 25;
@@ -238,7 +238,7 @@ namespace Calculator_CAPISTRANO
             // 
             // MemoryClear
             // 
-            this.MemoryClear.Location = new System.Drawing.Point(12, 68);
+            this.MemoryClear.Location = new System.Drawing.Point(12, 85);
             this.MemoryClear.Name = "MemoryClear";
             this.MemoryClear.Size = new System.Drawing.Size(75, 45);
             this.MemoryClear.TabIndex = 26;
@@ -247,7 +247,7 @@ namespace Calculator_CAPISTRANO
             // 
             // memory
             // 
-            this.memory.Location = new System.Drawing.Point(268, 68);
+            this.memory.Location = new System.Drawing.Point(268, 85);
             this.memory.Name = "memory";
             this.memory.Size = new System.Drawing.Size(75, 45);
             this.memory.TabIndex = 27;
@@ -256,7 +256,7 @@ namespace Calculator_CAPISTRANO
             // 
             // btnPLUS
             // 
-            this.btnPLUS.Location = new System.Drawing.Point(268, 272);
+            this.btnPLUS.Location = new System.Drawing.Point(268, 289);
             this.btnPLUS.Name = "btnPLUS";
             this.btnPLUS.Size = new System.Drawing.Size(75, 45);
             this.btnPLUS.TabIndex = 28;
@@ -266,7 +266,7 @@ namespace Calculator_CAPISTRANO
             // 
             // btnMINUS
             // 
-            this.btnMINUS.Location = new System.Drawing.Point(268, 221);
+            this.btnMINUS.Location = new System.Drawing.Point(268, 238);
             this.btnMINUS.Name = "btnMINUS";
             this.btnMINUS.Size = new System.Drawing.Size(75, 45);
             this.btnMINUS.TabIndex = 29;
@@ -276,7 +276,7 @@ namespace Calculator_CAPISTRANO
             // 
             // btnTIMES
             // 
-            this.btnTIMES.Location = new System.Drawing.Point(268, 170);
+            this.btnTIMES.Location = new System.Drawing.Point(268, 187);
             this.btnTIMES.Name = "btnTIMES";
             this.btnTIMES.Size = new System.Drawing.Size(75, 45);
             this.btnTIMES.TabIndex = 30;
@@ -286,7 +286,7 @@ namespace Calculator_CAPISTRANO
             // 
             // btnDIVIDE
             // 
-            this.btnDIVIDE.Location = new System.Drawing.Point(268, 119);
+            this.btnDIVIDE.Location = new System.Drawing.Point(268, 136);
             this.btnDIVIDE.Name = "btnDIVIDE";
             this.btnDIVIDE.Size = new System.Drawing.Size(75, 45);
             this.btnDIVIDE.TabIndex = 31;
@@ -294,11 +294,33 @@ namespace Calculator_CAPISTRANO
             this.btnDIVIDE.UseVisualStyleBackColor = true;
             this.btnDIVIDE.Click += new System.EventHandler(this.operation_click);
             // 
+            // memorycalc
+            // 
+            this.memorycalc.Location = new System.Drawing.Point(12, 2);
+            this.memorycalc.Name = "memorycalc";
+            this.memorycalc.Size = new System.Drawing.Size(75, 23);
+            this.memorycalc.TabIndex = 32;
+            this.memorycalc.Text = "Memory";
+            this.memorycalc.UseVisualStyleBackColor = true;
+            this.memorycalc.Click += new System.EventHandler(this.memorycalc_Click);
+            // 
+            // aboutcal
+            // 
+            this.aboutcal.Location = new System.Drawing.Point(93, 2);
+            this.aboutcal.Name = "aboutcal";
+            this.aboutcal.Size = new System.Drawing.Size(75, 23);
+            this.aboutcal.TabIndex = 33;
+            this.aboutcal.Text = "About Calculator";
+            this.aboutcal.UseVisualStyleBackColor = true;
+            this.aboutcal.Click += new System.EventHandler(this.aboutcal_Click);
+            // 
             // CALCULATOR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 374);
+            this.ClientSize = new System.Drawing.Size(353, 392);
+            this.Controls.Add(this.aboutcal);
+            this.Controls.Add(this.memorycalc);
             this.Controls.Add(this.btnDIVIDE);
             this.Controls.Add(this.btnTIMES);
             this.Controls.Add(this.btnMINUS);
@@ -358,6 +380,8 @@ namespace Calculator_CAPISTRANO
         private System.Windows.Forms.Button btnMINUS;
         private System.Windows.Forms.Button btnTIMES;
         private System.Windows.Forms.Button btnDIVIDE;
+        private System.Windows.Forms.Button memorycalc;
+        private System.Windows.Forms.Button aboutcal;
     }
 }
 

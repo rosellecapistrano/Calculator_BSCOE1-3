@@ -41,11 +41,6 @@ namespace WinFormsApp1
                 playerturn.Text = "PLAYER 2";
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -53,22 +48,12 @@ namespace WinFormsApp1
 
         private void About_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("by Roselle + her Taeil Photocards that inspires her to do this", "About Tic Tac Toe");
+            MessageBox.Show("by Roselle", "About Tic Tac Toe");
         }
 
         private void NewGame_Click(object sender, EventArgs e)
         {
             Application.Restart();
-        }
-
-        private void label2_ControlAdded(object sender, ControlEventArgs e)
-        {
-
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-            
         }
     }
 }

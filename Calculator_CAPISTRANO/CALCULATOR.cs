@@ -21,14 +21,9 @@ namespace Calculator_CAPISTRANO
             InitializeComponent();
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void AC_Click(object sender, EventArgs e)
@@ -44,25 +39,60 @@ namespace Calculator_CAPISTRANO
         private void CLEAR_Click(object sender, EventArgs e)
         {
             TEXTBOX1.Clear();
-            TEXTBOX1.Text = "0";
         }
 
         private void btn_Click(object sender, EventArgs e)
         {
-            if (TEXTBOX1.Text == "0" | btn_clicked)
+            if (btn_clicked)
             {
                 TEXTBOX1.Clear();
             }
+            btn_clicked = false;
             Button n = (Button)sender;
             TEXTBOX1.Text = TEXTBOX1.Text + n.Text;
-            num = float.Parse(TEXTBOX1.Text);
         }
 
         private void operation_click(object sender, EventArgs e)
         {
-            Button n = (Button)sender;
-            arithmetic = n.Text;
+            Button c = (Button)sender;
+            arithmetic = c.Text;
+            num = float.Parse(TEXTBOX1.Text);
             btn_clicked = true;
+        }
+
+        private void memorycalc_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void aboutcal_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("By Roselle Bianca Capistrano of BSCOE 1-3", "About Calculator");
+        }
+
+        private void equals_Click(object sender, EventArgs e)
+        {
+            switch (arithmetic)
+            {
+                case "+":
+                    TEXTBOX1.Text = (num + float.Parse(TEXTBOX1.Text)).ToString();
+                    break;
+
+                case "x":
+                    TEXTBOX1.Text = (num * float.Parse(TEXTBOX1.Text)).ToString();
+                    break;
+
+                case "/":
+                    TEXTBOX1.Text = (num / float.Parse(TEXTBOX1.Text)).ToString();
+                    break;
+
+                case "-":
+                    TEXTBOX1.Text = (num - float.Parse(TEXTBOX1.Text)).ToString();
+                    break;
+                default:
+                    break;
+            }
+            btn_clicked = false;
         }
     }
 }

@@ -176,7 +176,6 @@ namespace WinFormsApp1
             this.playerturn.Size = new System.Drawing.Size(173, 37);
             this.playerturn.TabIndex = 14;
             this.playerturn.Text = " ";
-            this.playerturn.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // TICTACTOE
             // 

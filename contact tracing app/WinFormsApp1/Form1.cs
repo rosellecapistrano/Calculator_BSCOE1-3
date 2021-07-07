@@ -22,19 +22,14 @@ namespace WinFormsApp1
         {
             StreamWriter outputFile;
             outputFile = File.AppendText("contact_tracing.txt");
-            outputFile.WriteLine(nametxt);
-            outputFile.WriteLine(addresstxt);
-            outputFile.WriteLine(temperaturetxt);
+            outputFile.WriteLine(nametxt.Text);
+            outputFile.WriteLine(addresstxt.Text);
+            outputFile.WriteLine(temperaturetxt.Text);
             outputFile.WriteLine("=================");
             outputFile.Close();
         }
 
         private void contact_tracing_app_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void userinput_TextChanged(object sender, EventArgs e)
         {
 
         }
