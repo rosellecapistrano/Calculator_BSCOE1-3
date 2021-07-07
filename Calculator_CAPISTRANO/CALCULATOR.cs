@@ -29,21 +29,28 @@ namespace Calculator_CAPISTRANO
         private void AC_Click(object sender, EventArgs e)
         {
             TEXTBOX1.Clear();
+            history.Text = "";
+            TEXTBOX1.Text = "0";
         }
 
         private void ERASE_Click(object sender, EventArgs e)
         {
             TEXTBOX1.Text = TEXTBOX1.Text.Substring(0, TEXTBOX1.Text.Length - 1);
+            if (TEXTBOX1.Text == "") 
+            {
+                TEXTBOX1.Text = "0";
+            }
         }
 
         private void CLEAR_Click(object sender, EventArgs e)
         {
             TEXTBOX1.Clear();
+            TEXTBOX1.Text = "0";
         }
 
         private void btn_Click(object sender, EventArgs e)
         {
-            if (btn_clicked)
+            if ((btn_clicked)||(TEXTBOX1.Text == "0")) 
             {
                 TEXTBOX1.Clear();
             }
@@ -58,11 +65,7 @@ namespace Calculator_CAPISTRANO
             arithmetic = c.Text;
             num = float.Parse(TEXTBOX1.Text);
             btn_clicked = true;
-        }
-
-        private void memorycalc_Click(object sender, EventArgs e)
-        {
-            
+            history.Text = num + arithmetic;
         }
 
         private void aboutcal_Click(object sender, EventArgs e)
